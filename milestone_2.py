@@ -11,7 +11,7 @@ word = random.choice(word_list)
 print(word)
 
 # Asks the user for a guess
-guess = str(input("Please enter a single letter: "))
+guess = input("Please enter a single letter: ")
 
 # Checks if the guess is a single letter
 if (len(guess) == 1) and guess.isalpha():
