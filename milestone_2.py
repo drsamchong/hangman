@@ -1,4 +1,5 @@
 
+# import random module for random word choice
 import random
 
 # Creates initial list of words
