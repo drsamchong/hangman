@@ -16,4 +16,4 @@ In this milestone, the foundations for the Hangman were coded:
 1. The guess is checked to verify that it is a single-character, alphabetical string
 
 
-![]("images/hangman_milestone_2_py.png")
+![](images/hangman_milestone_2_py.png)
