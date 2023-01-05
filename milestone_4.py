@@ -14,6 +14,10 @@ class Hangman():
         guess = guess.lower()
         if guess in self.word:
             print(f"Good guess! {guess} is in the word.")
+            for idx, char in enumerate(self.word):
+                if char == guess:
+                    self.word_guessed[idx] = char
+
         else:
             print(f"Sorry, {guess} is not in the word. Try again.")
    
@@ -22,7 +26,7 @@ class Hangman():
             guess = input("Please guess a single letter: ")
             if not ((len(guess) == 1) and guess.isalpha()):
                 print("Invalid letter. Please, enter a single alphabetical character.")
-                break
+                # break
             elif guess in self.list_of_guesses:
                 print("You already tried that letter!")
                 break
@@ -47,6 +51,7 @@ print(game.num_letters)
 print(game.list_of_guesses)
 # %%
 game.ask_for_input()
+print(game.word_guessed)
 print(game.list_of_guesses)
 
 # %%
