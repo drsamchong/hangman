@@ -17,3 +17,8 @@ In this milestone, the foundations for the Hangman were coded:
 
 
 ![](images/hangman_milestone_2_py.png)
+
+## Milestone 3
+
+As part of this milestone, the code to request that the user inputs a single character as a guess and validates it was moved to a function: ask_for_input
+A second function, check_guess, was added to check whether the guessed character appears in the target word. It takes the user's guessed character and provides feedback to the user on whether the character is present in the word or not.
