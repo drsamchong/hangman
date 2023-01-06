@@ -1,4 +1,3 @@
-# %%
 import random
 
 class Hangman():
@@ -9,6 +8,18 @@ class Hangman():
         self.word_guessed = ['_' for char in [*self.word]]
         self.num_letters = len(set(self.word))
         self.list_of_guesses = []
+
+    def ask_for_input(self):
+        while True:
+            guess = input("Please enter a single character: ")
+            if len(guess) != 1 or not (guess.isalpha()):
+                print("Invalid letter. Please, enter a single alphabetical character.")
+            elif guess in self.list_of_guesses:
+                print("You already tried that letter!")
+            else:
+                self.check_guess(guess)
+#                self.list_of_guesses.append(guess)
+                break
 
     def check_guess(self, guess):
         guess = guess.lower()
@@ -25,35 +36,18 @@ class Hangman():
             print(f"You have {self.num_lives} lives left.")
         self.list_of_guesses.append(guess)    
  
-    def ask_for_input(self):
-#        pass
-        while True:
-            guess = input("Please enter a single character: ")
-            if len(guess) != 1 or not (guess.isalpha()):
-                print("Invalid letter. Please, enter a single alphabetical character.")
-            elif guess in self.list_of_guesses:
-                print("You already tried that letter!")
-            else:
-                self.check_guess(guess)
-#                self.list_of_guesses.append(guess)
-                break
 
 
-
-
-
-# %%
 words = ['horse', 'cat', 'elephant']
 
 game = Hangman(words)
-# %%
+
 #print(game.word)
 #print(game.word_guessed)
 #print(game.num_letters)
 #print(game.list_of_guesses)
-# %%
+
 game.ask_for_input()
 print(game.word_guessed)
 print(game.list_of_guesses)
 
-# %%
