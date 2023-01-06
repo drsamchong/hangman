@@ -39,8 +39,8 @@ class Hangman():
  
 
 # %%
-def play_game(word_list):
-#    num_lives=None
+def play_game(word_list, num_lives):
+    num_lives=5
     game = Hangman(word_list) #, num_lives)
     while True:
         if game.num_lives == 0:
