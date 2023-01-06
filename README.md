@@ -40,3 +40,9 @@ Methods:
 - Initialiser: An object is created by passing a list of words and, optionally, a number of lives. It sets the attributes above.
 - ask_for_input: Requests that the user enters a single character guess, validates the input and check that it is not already in the list of previous guesses. It loops to request further guesses if the guess does not meet the requirements. If the checks are passed, the guess is passed to the check_guess method. 
 - check_guess: Checks whether the guessed letter is present in the target word. It updates the word_guessed and num_letters in the case of a correct guess. It reduces the number of lives if incorrect. The current guess is added to the list of guesses.
+
+## Milestone 5
+
+A function play_game was added to implement the logic required for playing a game of Hangman.
+
+The function is passed a list of potential target words and it sets the number of lives that the player has. These are passed as arguments to instantiate an object of the Hangman class representing a game of Hangman. The code checks whether the player has lives left and the code completes, after informing the player they lost. If there are no letters left to guess, the player has guessed the entire word; the player is congratulated and the code exits. If there are still lives and letters to guess remaining, the code loops, calling the game's ask_for_input method until one of the conditions are met.
