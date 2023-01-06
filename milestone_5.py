@@ -59,19 +59,3 @@ word_list = ['horse', 'cat', 'elephant']
 play_game(word_list)
 
 
-# %%
-#word_list = ['horse', 'cat', 'elephant']
-
-#game = Hangman(word_list, None)
-
-#print(game.word)
-#print(game.word_guessed)
-#print(game.num_letters)
-#print(game.list_of_guesses)
-# %%
-#game.ask_for_input()
-#print(game.word_guessed)
-#print(game.list_of_guesses)
-
-
-# %%

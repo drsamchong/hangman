@@ -26,7 +26,7 @@ A second function, check_guess, was added to check whether the guessed character
 
 ## Milestone 4
 
-In the milestone, a class was defined to encapsualte the attributes and methods associated with an object that represents a game of Hangman.
+In the milestone, a class was defined to encapsulate the attributes and methods associated with an object that represents a game of Hangman.
 
 Attributes:
 - word_list: A list of potential words which must be passed as argument to the initialisation method
